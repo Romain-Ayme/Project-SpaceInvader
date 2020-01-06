@@ -1,0 +1,43 @@
+KEY_LEFT : q
+KEY_RIGHT : d
+KEY_SHOOT : m
+
+COLOR_INVADERS : KGreen
+SIZE_INVADERS : 4
+TOKEN_INVADERS : W
+
+COLOR_MISSILE : KOrange
+TOKEN_MISSILE : T
+
+COLOR_PLAYER : KBlue
+TOKEN_PLAYER : A
+
+COLOR_TORPEDO : KYellow
+TOKEN_TORPEDO : I
+
+SPACE_SIZE : 10
+
+    const char KEmpty               = ' ';  // case vide de l'écran
+
+    const unsigned KInvadersMiddle  = KInvadersSize / 2;
+    const string KInvadersForm (KInvadersSize, KInsideInvader);  // forme de l'envahisseur
+
+    // Constantes liées au joueur
+    const unsigned KMySize          = 1;
+    const unsigned KMyMiddle        = KMySize / 2;
+    const string KMyForm (KMySize, KInsideMe);
+
+    // Constantes liées à l'espace (l'écran)
+
+    const unsigned KSizeLine   = 10;   // Nombre de lignes de l'écran (de l'espace)
+    const unsigned KSizeSpace  = 10;   // Nombre de colonnes de l'écran (de l'espace)
+
+    const unsigned KBegInvader = 0;    // Numéro de colonne où commence l'envahisseur
+    const unsigned KBegMe      = KSizeLine / 2;  // Numéro de colonne où commence le joueur
+
+    typedef vector <string> CVString;    // c'est le type de l'écran (l'espace, la matrice)
+
+    const string KEmptyLine (KSizeLine, KEmpty);  // Une ligne vide de la matrice
+
+    const unsigned KRatioMeInvaders = 4;    // Nombre de fois où c'est le tour du joueur pour un tour de l'envahisseur
+

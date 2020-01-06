@@ -4,4 +4,14 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+        nsutil.cpp
+
+DISTFILES += \
+    Invader.img \
+    Invader.txt \
+    SpaceInvadertext.txt \
+    settings.yml
+
+HEADERS += \
+    nsutil.h
